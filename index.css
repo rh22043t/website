@@ -1,24 +1,31 @@
+/* General styles for the body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #fff7e6; /* Light orange background for warmth */
 }
 
+/* Header styles */
 header {
-    background-color: #f8f8f8;
+    background-color: #ffcc80; /* Orange background */
     padding: 20px;
     text-align: center;
 }
 
-title {
+/* Title styles */
+#title {
     text-align: center;
-    border: 2px solid blue;
+    border: 2px solid #ff9800; /* Darker orange border */
     padding: 10px;
     display: inline-block;
+    background-color: #fff3e0; /* Light orange background */
+    border-radius: 10px; /* Rounded corners */
 }
 
+/* Navigation styles */
 nav {
-    background-color: #333;
+    background-color: #ff9800; /* Darker orange */
     overflow: hidden;
 }
 
@@ -41,36 +48,55 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #111;
+    background-color: #e65100; /* Darker shade on hover */
 }
 
+/* Main content styles */
 main {
     padding: 20px;
 }
 
+/* Section styles */
 section {
     margin-bottom: 20px;
 }
 
+/* Section titles */
 h2 {
-    color: #333;
+    color: #e65100; /* Darker orange */
 }
 
+/* List styles */
 ul {
     list-style-type: disc;
     margin-left: 20px;
 }
 
+/* Image styles */
 img {
     max-width: 100%;
     height: auto;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
+/* Footer styles */
 footer {
-    background-color: #f8f8f8;
+    background-color: #ffcc80; /* Orange background */
     text-align: center;
     padding: 10px;
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    nav ul li {
+        float: none;
+    }
+    nav ul li a {
+        text-align: left;
+        padding: 10px;
+    }
 }
